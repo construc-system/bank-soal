@@ -5,8 +5,9 @@ window.SOAL_DATA['pkn-a'] = `
 # ===== SOAL PPKn - MODUL A (40 soal, sesuai kisi-kisi) =====
 # Baris yang diawali tanda # diabaikan (komentar).
 # Tiap soal dipisah dengan baris: ---
-# GAMBAR berisi URL gambar (https://...). Soal tanpa gambar tidak punya baris GAMBAR.
-# Soal bergambar di modul ini: No. 7 (foto tokoh) dan No. 38 (gambar pelanggaran norma).
+# GAMBAR berisi ID gambar (contoh: pkn-a-7). URL aslinya diisi di file soal/gambar.js.
+# Soal tanpa gambar tidak punya baris GAMBAR.
+# Soal bergambar di modul ini: No. 7, No. 38.
 
 NO: 1
 INDIKATOR: Peristiwa Perumusan Pancasila
@@ -70,8 +71,8 @@ PEMBAHASAN: Pernyataan (2) salah karena Piagam Jakarta disusun oleh Panitia Semb
 ---
 NO: 7
 INDIKATOR: Tokoh Perumus Pancasila dan Tanggal Penyampaian Gagasan
+GAMBAR: pkn-a-7
 # TODO: isi URL foto Mr. Muhammad Yamin. Pastikan nama tokoh TIDAK tertulis di gambar.
-GAMBAR:
 SOAL: Perhatikan gambar tokoh di atas! Tokoh perumus Pancasila tersebut menyampaikan gagasan dasar negara dalam sidang pertama BPUPKI pada tanggal...
 A: 29 Mei 1945
 B: 31 Mei 1945
@@ -382,8 +383,8 @@ PEMBAHASAN: Menerima buku adalah hak murid, dan kewajibannya adalah merawat sert
 ---
 NO: 38
 INDIKATOR: Pelanggaran Norma pada Gambar
+GAMBAR: pkn-a-38
 # TODO: isi URL gambar pengendara motor menerobos lampu merah di persimpangan.
-GAMBAR:
 SOAL: Perhatikan gambar di atas! Gambar menunjukkan seorang pengendara motor menerobos lampu merah di persimpangan jalan. Jenis norma yang dilanggar adalah...
 A: Norma agama
 B: Norma kesusilaan

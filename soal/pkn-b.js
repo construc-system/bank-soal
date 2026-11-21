@@ -5,8 +5,9 @@ window.SOAL_DATA['pkn-b'] = `
 # ===== SOAL PPKn - MODUL B (40 soal, sesuai kisi-kisi) =====
 # Baris yang diawali tanda # diabaikan (komentar).
 # Tiap soal dipisah dengan baris: ---
-# GAMBAR berisi URL gambar (https://...). Soal tanpa gambar tidak punya baris GAMBAR.
-# Soal bergambar di modul ini: No. 7 (foto tokoh) dan No. 38 (gambar pelanggaran norma).
+# GAMBAR berisi ID gambar (contoh: pkn-b-7). URL aslinya diisi di file soal/gambar.js.
+# Soal tanpa gambar tidak punya baris GAMBAR.
+# Soal bergambar di modul ini: No. 7, No. 38.
 
 NO: 1
 INDIKATOR: Peristiwa Perumusan Pancasila
@@ -70,8 +71,8 @@ PEMBAHASAN: Pernyataan (2) salah karena sidang kedua BPUPKI diadakan setelah sid
 ---
 NO: 7
 INDIKATOR: Tokoh Perumus Pancasila dan Tanggal Penyampaian Gagasan
+GAMBAR: pkn-b-7
 # TODO: isi URL foto Prof. Dr. Soepomo. Pastikan nama tokoh TIDAK tertulis di gambar.
-GAMBAR:
 SOAL: Perhatikan gambar tokoh di atas! Tokoh perumus Pancasila tersebut menyampaikan gagasan dasar negara dalam sidang pertama BPUPKI pada tanggal...
 A: 29 Mei 1945
 B: 31 Mei 1945
@@ -382,8 +383,8 @@ PEMBAHASAN: Menggunakan perpustakaan adalah hak murid, sedangkan menjaga keterti
 ---
 NO: 38
 INDIKATOR: Pelanggaran Norma pada Gambar
+GAMBAR: pkn-b-38
 # TODO: isi URL gambar remaja berbicara kasar dan tidak memberi tempat duduk kepada nenek di dalam bus.
-GAMBAR:
 SOAL: Perhatikan gambar di atas! Gambar menunjukkan seorang remaja berbicara kasar dan tidak mau memberi tempat duduk kepada seorang nenek di dalam bus. Jenis norma yang dilanggar adalah...
 A: Norma kesopanan
 B: Norma hukum

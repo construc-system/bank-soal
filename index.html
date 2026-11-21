@@ -71,7 +71,7 @@
                 </span>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 font-heading">Pilih Mata Pelajaran & Paket Modul</h2>
                 <p class="text-slate-600 text-sm md:text-base">
-                    Setiap paket berisi 40 soal lengkap dengan indikator pembelajaran, gambar visual interaktif, serta durasi waktu 2 jam.
+                    Setiap paket berisi 35-40 soal lengkap dengan indikator pembelajaran, gambar visual interaktif, serta durasi waktu 2 jam.
                 </p>
             </div>
 
@@ -213,7 +213,7 @@
 
                 <!-- Question Text -->
                 <div class="space-y-2">
-                    <h3 id="question-text" class="text-lg md:text-xl font-bold text-slate-800 leading-relaxed">
+                    <h3 id="question-text" class="text-lg md:text-xl font-bold text-slate-800 leading-relaxed whitespace-pre-line">
                         Teks bunyi soal akan dimuat di sini...
                     </h3>
                 </div>
@@ -341,7 +341,7 @@
                         else o[last] = m[2].trim();
                     } else if (last && line.trim()) {
                         if (/^[A-E]$/.test(last)) o.opsi[last.charCodeAt(0) - 65] += ' ' + line.trim();
-                        else o[last] += ' ' + line.trim();
+                        else o[last] += (last === 'SOAL' ? '\n' : ' ') + line.trim();
                     }
                 });
                 o.opsi = o.opsi.filter(x => x !== undefined && x !== '');
@@ -360,6 +360,23 @@
             });
         }
 
+        // Muat modul gambar (soal/gambar.js). Kalau gagal, soal tetap jalan tanpa gambar.
+        async function loadGambar() {
+            if (window.GAMBAR_DATA && Object.keys(window.GAMBAR_DATA).length) return;
+            try { await loadScript(`${SOAL_DIR}gambar.js`); }
+            catch (err) { console.warn(err.message); window.GAMBAR_DATA = window.GAMBAR_DATA || {}; }
+        }
+
+        // GAMBAR di file soal bisa berupa URL langsung (https://...) atau ID gambar (contoh: mat-a-5)
+        function resolveGambar(g) {
+            g = (g || '').trim();
+            if (!g || /^(-|tidak ada|none|null)$/i.test(g)) return { id: '', url: '', judul: '' };
+            if (/^https?:\/\//i.test(g)) return { id: g, url: g, judul: '' };
+            const d = (window.GAMBAR_DATA || {})[g];
+            const url = d && /^https?:\/\//i.test((d.url || '').trim()) ? d.url.trim() : '';
+            return { id: g, url, judul: d ? (d.judul || '') : '' };
+        }
+
         async function loadBank(subj, modul) {
             const key = `${subj}-${modul.toLowerCase()}`;
             if (bankCache[key]) return bankCache[key];
@@ -367,22 +384,24 @@
                 await loadScript(`${SOAL_DIR}${key}.js`);
             }
             const raw = window.SOAL_DATA && window.SOAL_DATA[key];
-            if (typeof raw !== 'string') throw new Error(`Data soal "${key}" tidak ditemukan di file`);
+            if (typeof raw !== 'string') throw new Error(`Data soal "${key}" tidak ditemukan. Cek file ${SOAL_DIR}${key}.js: ada kesalahan sintaks (misal sisa tanda \`\`\` dari copy-paste, atau backtick hilang / berlebih).`);
             bankCache[key] = parseSoal(raw);
             return bankCache[key];
         }
 
         function getQuestionData(qId) {
             const r = activeQuestions[qId - 1];
-            if (!r) return { indicator: '', question: '', options: [], correct: -1, explanation: '', imageUrl: '' };
-            const g = (r.GAMBAR || '').trim();
+            if (!r) return { indicator: '', question: '', options: [], correct: -1, explanation: '', imageUrl: '', imageId: '', imageTitle: '' };
+            const img = resolveGambar(r.GAMBAR);
             return {
                 indicator: `${qId}. ${r.INDIKATOR || ''}`,
                 question: r.SOAL,
                 options: r.opsi,
-                correct: Math.max(0, (r.JAWABAN || 'A').trim().toUpperCase().charCodeAt(0) - 65),
+                correct: Math.max(0, Math.min(r.opsi.length - 1, ((r.JAWABAN || 'A').toUpperCase().match(/[A-E]/) || ['A'])[0].charCodeAt(0) - 65)),
                 explanation: r.PEMBAHASAN || '-',
-                imageUrl: /^https?:\/\//i.test(g) ? g : ''
+                imageUrl: img.url,
+                imageId: img.id,
+                imageTitle: img.judul
             };
         }
 
@@ -390,6 +409,7 @@
         async function selectSubjectModule(subj, modul) {
             let bank;
             try {
+                await loadGambar();
                 bank = await loadBank(subj, modul);
             } catch (err) {
                 console.error(err);
@@ -436,8 +456,18 @@
         }
 
         // RENDER GAMBAR (hanya dari URL di file soal)
-        function renderImageContent(qId, imageUrl) {
-            return `<img src="${imageUrl}" alt="Gambar Soal ${qId}" referrerpolicy="no-referrer" class="max-h-64 max-w-full rounded-xl object-contain border border-slate-200 shadow-sm" onerror="this.onerror=null; this.outerHTML='<p class=\'text-xs text-rose-600 font-bold\'>Gambar tidak dapat dimuat. Periksa URL-nya.</p>';">`;
+        function renderImageContent(qId, imageUrl, imageTitle) {
+            const alt = imageTitle ? `Gambar Soal ${qId}: ${imageTitle}` : `Gambar Soal ${qId}`;
+            return `<img src="${imageUrl}" alt="${alt}" referrerpolicy="no-referrer" class="max-h-64 max-w-full rounded-xl object-contain border border-slate-200 shadow-sm" onerror="this.onerror=null; this.outerHTML='<p class=\'text-xs text-rose-600 font-bold\'>Gambar tidak dapat dimuat. Periksa URL-nya.</p>';">`;
+        }
+
+        // Penanda kalau soal butuh gambar tetapi URL-nya belum diisi di soal/gambar.js
+        function renderImagePlaceholder(imageId, judul) {
+            return `<div class="w-full border-2 border-dashed border-slate-300 rounded-xl p-6 text-center text-slate-500 text-sm">
+                <i class="fa-regular fa-image text-3xl mb-2 block text-slate-400"></i>
+                <p class="font-bold">Gambar belum diisi${judul ? ': ' + judul : ''}</p>
+                <p class="text-xs mt-1">ID: <span class="font-mono">${imageId}</span> (isi URL di soal/gambar.js)</p>
+            </div>`;
         }
 
         // LOAD QUESTION AT INDEX
@@ -455,8 +485,8 @@
             // Image Render
             const illContainer = document.getElementById('illustration-container');
             const renderArea = document.getElementById('image-render-area');
-            illContainer.classList.toggle('hidden', !q.imageUrl);
-            renderArea.innerHTML = q.imageUrl ? renderImageContent(index + 1, q.imageUrl) : '';
+            illContainer.classList.toggle('hidden', !q.imageId);
+            renderArea.innerHTML = !q.imageId ? '' : (q.imageUrl ? renderImageContent(index + 1, q.imageUrl, q.imageTitle) : renderImagePlaceholder(q.imageId, q.imageTitle));
 
             // Render Multiple Choice Options
             const optionsContainer = document.getElementById('options-container');
