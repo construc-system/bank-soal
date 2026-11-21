@@ -85,7 +85,7 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== PPKN - MODUL B ==============================
   "pkn-b-7": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6F-YJLJduMaWPNm29GVr97gJ7GHfu1KxcPpm81ktHQ&s',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Foto Prof. Dr. Soepomo",
     mapel: "PPKn", modul: "B", no: 7,
     cara: "CARI DI INTERNET",
@@ -110,7 +110,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pkn-b-38": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDWwi0a-7wy9J655eKbgT00ao4Mk_VzdgwMO4WunHdXQUR6F8l',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Remaja berbicara kasar dan tidak memberi tempat duduk kepada nenek di bus",
     mapel: "PPKn", modul: "B", no: 38,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -136,10 +136,10 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== MATEMATIKA - MODUL A ==============================
   "mat-a-1": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-1.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Tiga pita P, Q, R (perbandingan pecahan)",
     mapel: "Matematika", modul: "A", no: 1,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Tiga pita P, Q, dan R sama panjang dan dibagi sama besar. Bagian pita yang berwarna menunjukkan bagian yang terpakai. Perhatikan pernyataan berikut! (1) Bagian berwarna pita P sama dengan 3/4 bagian. (2) Bagian berwarna pita Q lebih besar daripada pita P. (3) Bagian berwarna pita R sama dengan 1/2 bagian. (4) Bagian berwarna pita Q sama dengan 2/3 bagian. Pernyataan yang benar ditunjukkan oleh nomor...",
     jawaban: "D. (1), (3), dan (4)",
     isi: [
@@ -157,10 +157,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-3": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-3.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Lima gelas berisi sirup",
     mapel: "Matematika", modul: "A", no: 3,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Seluruh sirup pada gambar akan dituang ke dalam satu wadah besar. Banyak sirup di dalam wadah adalah... liter",
     jawaban: "D. 3 3/4",
     isi: [
@@ -176,10 +176,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-5": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-5.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Empat kartu bilangan desimal",
     mapel: "Matematika", modul: "A", no: 5,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Urutan bilangan pada kartu dari yang terkecil sampai terbesar adalah...",
     jawaban: "D. 0,405; 0,45; 0,504; 0,54",
     isi: [
@@ -194,10 +194,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-6": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-6.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Lingkaran 6 bagian, 4 diarsir",
     mapel: "Matematika", modul: "A", no: 6,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Pecahan yang senilai dengan bagian berwarna pada gambar adalah...",
     jawaban: "D. 2/3",
     isi: [
@@ -211,10 +211,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-9": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-9.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Tiga piring berisi kue",
     mapel: "Matematika", modul: "A", no: 9,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Rasio satuan banyak kue terhadap banyak piring adalah...",
     jawaban: "B. 4 kue untuk setiap 1 piring",
     isi: [
@@ -228,10 +228,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-21": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-21.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Penawaran pita merah dan pita biru",
     mapel: "Matematika", modul: "A", no: 21,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Perhatikan pernyataan berikut! (1) Harga pita merah Rp 5.000 per meter. (2) Harga pita biru Rp 4.000 per meter. (3) Pita merah lebih murah per meter daripada pita biru. (4) Pita biru lebih murah per meter daripada pita merah. Pernyataan yang benar ditunjukkan oleh nomor...",
     jawaban: "B. (1), (2), dan (4)",
     isi: [
@@ -246,10 +246,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-27": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-27.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Pizza 8 potong, 3 sudah dimakan",
     mapel: "Matematika", modul: "A", no: 27,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar pizza di atas! Potongan pizza yang berwarna abu-abu sudah dimakan. Pecahan yang menyatakan bagian pizza yang tersisa adalah...",
     jawaban: "C. 5/8",
     isi: [
@@ -263,10 +263,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-32": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-32.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Infografik sampah plastik per kelas",
     mapel: "Matematika", modul: "A", no: 32,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan infografik di atas! Urutan kelas dari yang paling sedikit sampai paling banyak mengumpulkan sampah plastik beserta alasannya adalah...",
     jawaban: "B. Kelas 6B, Kelas 6D, Kelas 6A, Kelas 6C, karena 18 kg, 21 kg, 24 kg, 30 kg",
     isi: [
@@ -282,10 +282,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-a-34": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-a-34.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Dua paket susu kotak",
     mapel: "Matematika", modul: "A", no: 34,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Bu Dewi ingin membeli susu kotak dengan harga yang lebih hemat. Pilihan dan alasan yang tepat adalah...",
     jawaban: "A. Merek Q, karena harga per kotak Rp 4.200 lebih murah daripada Rp 4.500",
     isi: [
@@ -303,10 +303,10 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== MATEMATIKA - MODUL B ==============================
   "mat-b-1": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-1.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Tiga batang X, Y, Z (perbandingan pecahan)",
     mapel: "Matematika", modul: "B", no: 1,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Tiga batang X, Y, dan Z sama panjang dan dibagi sama besar. Bagian batang yang berwarna menunjukkan bagian yang sudah dicat. Perhatikan pernyataan berikut! (1) Bagian berwarna batang X sama dengan 7/10 bagian. (2) Bagian berwarna batang Y sama dengan 1/2 bagian. (3) Bagian berwarna batang Z lebih besar daripada batang Y. (4) Bagian berwarna batang Z sama dengan 4/5 bagian. Pernyataan yang benar ditunjukkan oleh nomor...",
     jawaban: "C. (1) dan (2)",
     isi: [
@@ -324,10 +324,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-3": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-3.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Empat botol berisi jus",
     mapel: "Matematika", modul: "B", no: 3,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Seluruh jus pada gambar akan dituang ke dalam satu teko besar. Banyak jus di dalam teko adalah... liter",
     jawaban: "A. 3 1/3",
     isi: [
@@ -343,10 +343,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-5": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-5.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Empat kartu bilangan desimal",
     mapel: "Matematika", modul: "B", no: 5,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Urutan bilangan pada kartu dari yang terbesar sampai terkecil adalah...",
     jawaban: "C. 0,72; 0,702; 0,27; 0,207",
     isi: [
@@ -361,10 +361,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-6": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-6.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Batang 10 kotak, 6 diarsir",
     mapel: "Matematika", modul: "B", no: 6,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Pecahan yang senilai dengan bagian berwarna pada gambar adalah...",
     jawaban: "C. 3/5",
     isi: [
@@ -378,10 +378,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-9": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-9.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Lima kotak pensil berisi pensil warna",
     mapel: "Matematika", modul: "B", no: 9,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Rasio satuan banyak pensil terhadap banyak kotak pensil adalah...",
     jawaban: "A. 6 pensil untuk setiap 1 kotak",
     isi: [
@@ -395,10 +395,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-21": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-21.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Penawaran beras kemasan X dan Y",
     mapel: "Matematika", modul: "B", no: 21,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Perhatikan pernyataan berikut! (1) Harga beras kemasan X Rp 13.000 per kg. (2) Beras kemasan X lebih murah per kg daripada kemasan Y. (3) Harga beras kemasan Y Rp 12.000 per kg. (4) Beras kemasan Y lebih murah per kg daripada kemasan X. Pernyataan yang benar ditunjukkan oleh nomor...",
     jawaban: "A. (1), (3), dan (4)",
     isi: [
@@ -413,10 +413,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-27": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-27.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Batang cokelat 12 kotak, 5 sudah dimakan",
     mapel: "Matematika", modul: "B", no: 27,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar batang cokelat di atas! Kotak cokelat yang berwarna abu-abu sudah dimakan Raka. Pecahan yang menyatakan bagian cokelat yang tersisa adalah...",
     jawaban: "D. 7/12",
     isi: [
@@ -430,10 +430,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-32": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-32.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Infografik buku yang dibaca siswa",
     mapel: "Matematika", modul: "B", no: 32,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan infografik di atas! Urutan siswa dari yang paling banyak sampai paling sedikit membaca buku beserta alasannya adalah...",
     jawaban: "A. Cinta, Ani, Dodi, Budi, karena 17 buku, 14 buku, 12 buku, 9 buku",
     isi: [
@@ -449,10 +449,10 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "mat-b-34": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'gambar/mat-b-34.svg',   // SVG buatan sendiri, file ada di folder gambar/
     judul: "Dua botol sabun cair",
     mapel: "Matematika", modul: "B", no: 34,
-    cara: "BUAT SENDIRI (Canva / Google Slides / PowerPoint)",
+    cara: "SUDAH DIBUAT (SVG di folder gambar/)",
     soal: "Perhatikan gambar di atas! Bu Lina ingin membeli sabun cair dengan harga yang lebih hemat. Pilihan dan alasan yang tepat adalah...",
     jawaban: "B. Botol Q, karena harga per mililiter Rp 45 lebih murah daripada Rp 50",
     isi: [
@@ -470,7 +470,7 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== BAHASA JAWA - MODUL A ==============================
   "baja-a-7": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDOYWajx8junh0QRIRGzeR-rxgfaj4TCvM90g0bCrGYg&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tokoh wayang Semar (Punakawan)",
     mapel: "Bahasa Jawa", modul: "A", no: 7,
     cara: "CARI DI INTERNET",
@@ -497,7 +497,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "baja-a-28": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBSoC68igqzp1BTWkE48zcw0F4A7Le8AV0Sw2HkdPFKQ&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tokoh wayang Raden Arjuna (Pandhawa)",
     mapel: "Bahasa Jawa", modul: "A", no: 28,
     cara: "CARI DI INTERNET",
@@ -525,7 +525,7 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== BAHASA JAWA - MODUL B ==============================
   "baja-b-7": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFA5wYTz-V7sJBY6pdPsfgaw7DMqKIVm-f-aCf6xIXA&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tokoh wayang Petruk (Punakawan)",
     mapel: "Bahasa Jawa", modul: "B", no: 7,
     cara: "CARI DI INTERNET",
@@ -552,7 +552,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "baja-b-28": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVnOUCDnPfQBV-zShqBqOOZXUBEyFt3Fy9m56VtrOyg&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tokoh wayang Raden Werkudara / Bima (Pandhawa)",
     mapel: "Bahasa Jawa", modul: "B", no: 28,
     cara: "CARI DI INTERNET",
@@ -580,7 +580,7 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== PJOK - MODUL A ==============================
   "pjok-a-3": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBeA3g63XCe1UUJI8wOsN2mrH_HM1A0umj-pC8kzNpA&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Dribbling bola tangan dengan satu tangan",
     mapel: "PJOK", modul: "A", no: 3,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -606,7 +606,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-a-7": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUe1paKmAI-OM22K-K8C2lAnuiZLRDVwOynzJjsBZO-w&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Passing bawah bola voli",
     mapel: "PJOK", modul: "A", no: 7,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -632,7 +632,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-a-11": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyPzJ7XgDc5C9mgGxvcIRMHMPQ_xEGZPZp6xr12C4S0Q&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Lemparan melambung (bola dilempar dari atas kepala)",
     mapel: "PJOK", modul: "A", no: 11,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -658,7 +658,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-a-14": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://files.catbox.moe/mvz9xo.png',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Elakan bawah pencak silat",
     mapel: "PJOK", modul: "A", no: 14,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -684,7 +684,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-a-16": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9GqNlr0tiVdeyrjqAxQAq4SRsGCYEtfiZnygHn4hWA&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Rangkaian gerakan guling lenting",
     mapel: "PJOK", modul: "A", no: 16,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -710,7 +710,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-a-29": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0KQwJuWFMA08fRHOmEfBDHB_BoJUxujBw6MXtkJvD3NsQ_iSHpz_zsNwA&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Raket dan shuttlecock (bola bulu)",
     mapel: "PJOK", modul: "A", no: 29,
     cara: "CARI DI INTERNET",
@@ -735,7 +735,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-a-34": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRodC6NgjL0JZkrHe46RxyGyfwSXOF-mgqcCw0E4Wfiw&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tendangan T pencak silat",
     mapel: "PJOK", modul: "A", no: 34,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -763,7 +763,7 @@ Object.assign(window.GAMBAR_DATA, {
 
   // ============================== PJOK - MODUL B ==============================
   "pjok-b-3": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUA3BtF0jknOTXw71s5JgP1sLnmtlLAR_ndZAc4u9WzA&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Dribbling zig-zag melewati kerucut (bola tangan)",
     mapel: "PJOK", modul: "B", no: 3,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -789,7 +789,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-b-7": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIZz1D7BaRMFAdQVcsBkjD1Xz_NCDB5DHVuYrihOtMQ&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Passing atas bola voli",
     mapel: "PJOK", modul: "B", no: 7,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -815,7 +815,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-b-11": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxLgTeY3ofBReFzQSgozEZohVo1R3Ju2ABEY9gYITm3Q&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Lemparan menyusur tanah (ayunan tangan dari bawah)",
     mapel: "PJOK", modul: "B", no: 11,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -841,7 +841,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-b-14": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://files.catbox.moe/5ggzo5.png',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Elakan samping pencak silat",
     mapel: "PJOK", modul: "B", no: 14,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -867,7 +867,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-b-16": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu_Wvy8nslwRtDyvaOBwdm0nzxU5_vrfuM_OtRO3BGht6zjShfeQpqag2H&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tumpuan tengkuk pada guling lenting",
     mapel: "PJOK", modul: "B", no: 16,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",
@@ -893,7 +893,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-b-29": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkAAAlaIXXxGp-MgMXjSk2WQM5BSS_w7bnYMMNt1QIlw&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Meja dan bet tenis meja",
     mapel: "PJOK", modul: "B", no: 29,
     cara: "CARI DI INTERNET",
@@ -918,7 +918,7 @@ Object.assign(window.GAMBAR_DATA, {
     ],
   },
   "pjok-b-34": {
-    url: '',   // <-- TEMPEL URL GAMBAR DI SINI
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwgORIzDOlu06S0P3YvUTdy_mV4_JqgYOfg0ZfP_X2dw&s=10',   // <-- TEMPEL URL GAMBAR DI SINI
     judul: "Tendangan melingkar (sabit) pencak silat",
     mapel: "PJOK", modul: "B", no: 34,
     cara: "CARI DI INTERNET atau BUAT SENDIRI",

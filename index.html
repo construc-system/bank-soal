@@ -368,12 +368,17 @@
         }
 
         // GAMBAR di file soal bisa berupa URL langsung (https://...) atau ID gambar (contoh: mat-a-5)
+        // URL gambar: https://... ATAU path relatif ke file gambar (contoh: gambar/mat-a-1.svg)
+        function isGambarUrl(s) {
+            return /^https?:\/\//i.test(s) || /^[\w\-./%]+\.(svg|png|jpe?g|webp|gif)$/i.test(s);
+        }
+
         function resolveGambar(g) {
             g = (g || '').trim();
             if (!g || /^(-|tidak ada|none|null)$/i.test(g)) return { id: '', url: '', judul: '' };
-            if (/^https?:\/\//i.test(g)) return { id: g, url: g, judul: '' };
+            if (isGambarUrl(g)) return { id: g, url: g, judul: '' };
             const d = (window.GAMBAR_DATA || {})[g];
-            const url = d && /^https?:\/\//i.test((d.url || '').trim()) ? d.url.trim() : '';
+            const url = d && isGambarUrl((d.url || '').trim()) ? d.url.trim() : '';
             return { id: g, url, judul: d ? (d.judul || '') : '' };
         }
 
@@ -458,7 +463,7 @@
         // RENDER GAMBAR (hanya dari URL di file soal)
         function renderImageContent(qId, imageUrl, imageTitle) {
             const alt = imageTitle ? `Gambar Soal ${qId}: ${imageTitle}` : `Gambar Soal ${qId}`;
-            return `<img src="${imageUrl}" alt="${alt}" referrerpolicy="no-referrer" class="max-h-64 max-w-full rounded-xl object-contain border border-slate-200 shadow-sm" onerror="this.onerror=null; this.outerHTML='<p class=\'text-xs text-rose-600 font-bold\'>Gambar tidak dapat dimuat. Periksa URL-nya.</p>';">`;
+            return `<img src="${imageUrl}" alt="${alt}" referrerpolicy="no-referrer" class="max-h-80 md:max-h-96 max-w-full rounded-xl object-contain border border-slate-200 shadow-sm" onerror="this.onerror=null; this.outerHTML='<p class=\'text-xs text-rose-600 font-bold\'>Gambar tidak dapat dimuat. Periksa URL-nya.</p>';">`;
         }
 
         // Penanda kalau soal butuh gambar tetapi URL-nya belum diisi di soal/gambar.js
